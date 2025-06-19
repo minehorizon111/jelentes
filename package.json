@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Discord roleplay jelentés bot",
   "main": "jelentes_bot.js",
-  "type": "module",
   "scripts": {
     "start": "node jelentes_bot.js"
   },
