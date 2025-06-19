@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+console.log('TOKEN:', process.env.BOT_TOKEN ? 'Token betöltve' : 'Nincs token!');
 
 const { Client, GatewayIntentBits, Partials, ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder, Events, EmbedBuilder, SlashCommandBuilder, REST, Routes, ButtonBuilder, ButtonStyle } = require('discord.js');
 
@@ -7,7 +10,7 @@ const client = new Client({
 });
 
 // 🔁 IDE ÍRD A SAJÁT ADATAIDAT:
-require('dotenv').config();
+
 const TOKEN = process.env.BOT_TOKEN;
 const CLIENT_ID = '1385283856789274805';
 const GUILD_ID = '1133389389423190096';
